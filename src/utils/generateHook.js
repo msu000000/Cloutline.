@@ -1,4 +1,4 @@
-export async function fetchHooks(topic, tone = "dramatic") {
+export default async function generateHook(topic, tone = "dramatic") {
   const res = await fetch("/api/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
